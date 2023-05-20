@@ -2,6 +2,13 @@
   "navbar": {
     "welcome": "歡迎來到 ARIA Authroing Practice Guide (APG) 中文"
   },
+  "greeting": {
+    "whyTitle": "關於這個專案",
+    "description": "督促自己學習無障礙之外，也希望可以透過翻譯留下繁體中文的相關資料。"
+  },
+  "navigate": {
+    "goto": "前往"
+  },
   "routes": {
     "accordion": "手風琴",
     "alert": "警報",
