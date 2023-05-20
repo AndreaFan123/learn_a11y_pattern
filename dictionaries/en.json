@@ -1,8 +1,11 @@
 {
   "navbar": {
-    "welcome": "Welcome to ARIA Authroing Practice Guide (APG)"
+    "welcome": "Learn ARIA Authroing Practice Guide (APG)"
   },
   "greeting": {
+    "WhoAmITitle": "Who am I?",
+    "intro": "Hi there 👋, I am a Frontend Developer based in Taiwan.",
+    "goal": "Learn APG",
     "whyTitle": "Why I want to do this?",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
