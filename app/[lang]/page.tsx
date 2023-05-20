@@ -11,9 +11,7 @@ export default async function IndexPage({
   const d = await getDictionary(lang);
   return (
     <main>
-      <header>
-        <p>{d['navbar'].description}</p>
-      </header>
+      <header>{/* <p>{d['content']}</p> */}</header>
     </main>
   );
 }

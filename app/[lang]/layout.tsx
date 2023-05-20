@@ -29,9 +29,9 @@ export default async function RootLayout({
   return (
     <html lang={params.lang}>
       <body className={inter.className}>
-        <Navbar d={d['greeting']} />
+        <Navbar dictionary={d['navbar']} />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
