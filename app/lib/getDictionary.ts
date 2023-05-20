@@ -5,8 +5,8 @@ import 'server-only';
 // We also get the default import for cleaner types
 const dictionaries = {
   en: () => import('../../dictionaries/en.json').then(module => module.default),
-  zh_Hant: () =>
-    import('../../dictionaries/zh-Hant.json').then(module => module.default),
+  zh_TW: () =>
+    import('../../dictionaries/zh-TW.json').then(module => module.default),
 };
 
 export const getDictionary = async (locale: Locale) => dictionaries[locale]();

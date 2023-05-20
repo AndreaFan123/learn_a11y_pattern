@@ -7,13 +7,11 @@ export default async function IndexPage({
 }: {
   params: { lang: Locale };
 }) {
-  const d = await getDictionary(lang);
 
+  const d = await getDictionary(lang);
   return (
-    <main className="h-[100vh]">
-      <LocaleSwitcher />
-      <p>Current locale: {lang}</p>
-      <p>This text is rendered on the server: {d['greeting'].welcome}</p>
+    <main>
+      <header>{/* <p>{d['content']}</p> */}</header>
     </main>
   );
 }
