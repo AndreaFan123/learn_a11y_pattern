@@ -1,8 +1,11 @@
 {
   "navbar": {
-    "welcome": "歡迎來到 ARIA Authroing Practice Guide (APG) 中文"
+    "welcome": "學習 ARIA Authroing Practice Guide (APG) 中文"
   },
   "greeting": {
+    "WhoAmITitle": "我是誰？",
+    "intro": "Hi there 👋，我是來自台灣的前端工程師。",
+    "goal": "學習 APG",
     "whyTitle": "關於這個專案",
     "description": "督促自己學習無障礙之外，也希望可以透過翻譯留下繁體中文的相關資料。"
   },
