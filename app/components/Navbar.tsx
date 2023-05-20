@@ -1,7 +1,18 @@
-export default function Navbar() {
+import LocaleSwitcher from './LocaleSwitcher';
+
+export default function Navbar({
+  d,
+}: {
+  d: {
+    welcome: string;
+  };
+}) {
   return (
     <header>
-      <nav>Navbar</nav>
+      <nav>
+        <h1>{d.welcome}</h1>
+        <LocaleSwitcher />
+      </nav>
     </header>
   );
 }

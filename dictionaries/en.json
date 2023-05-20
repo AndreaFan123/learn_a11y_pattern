@@ -1,5 +1,8 @@
 {
   "greeting": {
-    "welcome": "Welcome"
+    "welcome": "Welcome to ARIA Authroing Practice Guide (APG)"
+  },
+  "navbar": {
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
   }
 }
