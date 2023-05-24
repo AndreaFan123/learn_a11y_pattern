@@ -1,34 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Learn APG
 
-## Getting Started
+## Purpose
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Tech Stack
+- Next.Js
+- Tailwind CSS
+
+
+## Setup
+
+### Next.Js
+
+
+### Postcss
+- `npm i -D post-import`
+- Adding following syntax in `postcss.config.js`
+
+```js
+module.exports = {
+  plugins: {
+    "postcss-import": {},
+    "tailwindcss/nesting": {},
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+```
+- Create a folder `styles` and `main.css` as a sort of an entrance file for all the css files, first to import tailwindcss as below:
+
+```css
+/* styles/main.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Then create a `global.css` inside `styles` folder as we can add our own global css here, and add inside `main.css`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```css
+/* styles/main.css */
+@import 'tailwindcss/base';
+@import './global.css';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+```
+- Swap the original `global.css` created by Tailwindcss in `layout.tsx`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```tsx
+// layout.tsx
+import '../styles/main.css'
 
-## Learn More
+export default function RootLayout() {
+  ...
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Create a `components` folder to include all components css files, for example `lading-page.css` and import it in `main.css` as below:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```css
+/* styles/main.css */
+@import 'tailwindcss/base';
+@import './global.css';
+@import 'tailwindcss/components';
+@import './components/landing-page.css';
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- You can create subfolders inside `components` folder to organize css files, for example: Creating a `login` folder and inside this folder create a `login.css` file and import it in `main.css` as below:
 
-## Deploy on Vercel
+```css
+/* styles/main.css */
+@import 'tailwindcss/base';
+@import './global.css';
+@import 'tailwindcss/components';
+@import './components/login/login.css';
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+>**Info**
+>
+> Custome css paths should be placed under `tailwindcss/base` or `tailwindcss/components` or `tailwindcss/utilities` in `main.css` file or it won't work.
