@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@types/negotiator": "^0.6.1",
-    "eslint-config-prettier": "^8.8.0"
+    "eslint-config-prettier": "^8.8.0",
+    "postcss-import": "^15.1.0"
   }
 }

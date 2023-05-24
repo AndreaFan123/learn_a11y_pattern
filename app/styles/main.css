@@ -1,0 +1,6 @@
+@import 'tailwindcss/base';
+@import './global.css';
+@import 'tailwindcss/components';
+@import './components/apg/apg-landing.css';
+@import 'tailwindcss/utilities';
+@import './utilities/apg-landing.css'

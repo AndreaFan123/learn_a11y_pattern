@@ -1,0 +1,21 @@
+.apg-title {
+  @apply text-9xl font-extrabold bg-gradient-to-r from-[#222]  to-[#444] bg-clip-text text-transparent;
+}
+
+.apg-subtitle {
+  @apply text-2xl font-semibold text-[#333]
+text-2xl font-semibold text-[#333];
+}
+
+.apg-paragraph {
+  @apply text-lg text-[#444];
+}
+
+.apg-vertical-line {
+  @apply md:border-[1px] md:border-[#333] md:h-[30rem] md:top-[21px] md:right-[170px] md:absolute md:-z-10;
+}
+
+.apg-yellow-underline {
+  @apply md:absolute md:w-2/4 md:h-7 md:bg-[#fadc49] md:-z-20 md:top-[6rem]
+}
+

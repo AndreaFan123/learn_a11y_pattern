@@ -1,4 +1,4 @@
-import './globals.css';
+import '../styles/main.css';
 import { Inter } from 'next/font/google';
 import { i18n } from '@/i18n-config';
 import Navbar from '../components/Navbar';
