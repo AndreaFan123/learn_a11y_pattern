@@ -76,6 +76,6 @@ export default function RootLayout() {
 @import './components/login/login.css';
 ```
 
->**Info**
+>**Note**
 >
 > Custome css paths should be placed under `tailwindcss/base` or `tailwindcss/components` or `tailwindcss/utilities` in `main.css` file or it won't work.
