@@ -1,19 +1,13 @@
 # Learn APG
-
-## Purpose
-
+"Learn APG" is a personal side-project, I initiated this to learn and practice APG concepts and technologies and provide Traditional Chinese version of APG documentation.
 
 ## Tech Stack
 - Next.Js
 - Tailwind CSS
-
-
-## Setup
-
-### Next.Js
-
-
+- python for scraping APG documentation and store it in JSON format.
 ### Postcss
+This is my first time to use Tailwind CSS, hence I provide some notes for myself to remember how to setup Tailwind CSS with Postcss.
+
 - `npm i -D post-import`
 - Adding following syntax in `postcss.config.js`
 
@@ -76,6 +70,6 @@ export default function RootLayout() {
 @import './components/login/login.css';
 ```
 
->**Note**
+>**Note**o
 >
 > Custome css paths should be placed under `tailwindcss/base` or `tailwindcss/components` or `tailwindcss/utilities` in `main.css` file or it won't work.
