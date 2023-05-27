@@ -4,10 +4,10 @@
   },
   "greeting": {
     "WhoAmITitle": "我是誰？",
-    "intro": "Hi there 👋，我是來自台灣的前端工程師。",
+    "intro": "Hi there 👋，我是 Andrea, 我是來自台灣的前端工程師。",
     "goal": "學習 APG",
     "whyTitle": "關於這個專案",
-    "description": "督促自己學習無障礙之外，也希望可以透過翻譯留下繁體中文的相關資料。"
+    "description": "這是我的個人專案，主要是督促自己學習無障礙的 Patter 之外，也希望可以透過翻譯留下繁體中文的相關資料，如果你有任何問題，歡迎你聯絡我！"
   },
   "navigate": {
     "goto": "前往"

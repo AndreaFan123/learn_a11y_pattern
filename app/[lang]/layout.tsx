@@ -32,7 +32,7 @@ export default async function RootLayout({
       <body className={inter.className}>
         <Navbar dictionary={d['navbar']} />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
