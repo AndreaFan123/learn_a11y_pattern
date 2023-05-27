@@ -1,5 +1,5 @@
 .apg-wrapper {
-  @apply max-w-5xl mx-auto mt-16 flex flex-col items-start  gap-10 px-6;
+  @apply max-w-5xl mx-auto m-16 flex flex-col items-start  gap-10 px-6;
 }
 
 .apg-article-container {

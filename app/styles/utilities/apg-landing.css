@@ -12,7 +12,7 @@ text-2xl font-semibold text-[#333];
 }
 
 .apg-vertical-line {
-  @apply md:border-[1px] md:border-[#333] md:h-[30rem] md:top-[21px] md:right-[170px] md:absolute md:-z-10;
+  @apply md:border-[1px] md:border-[#333] md:h-[26rem] md:top-[21px] md:right-[170px] md:absolute md:-z-10;
 }
 
 .apg-yellow-underline {

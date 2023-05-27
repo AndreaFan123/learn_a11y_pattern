@@ -4,10 +4,10 @@
   },
   "greeting": {
     "WhoAmITitle": "Who am I?",
-    "intro": "Hi there 👋, I am a Frontend Developer based in Taiwan.",
+    "intro": "Hi there 👋, my name is Andrea, I am a Frontend Developer based in Taiwan.",
     "goal": "Learn APG",
     "whyTitle": "Why I want to do this?",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    "description": "This is my side-project to learn APG. I will try to build a website with APG and share my experience with you and sice there's no Traditional Chinese version of APG, I will also translate it into Traditional Chinese. If you have any questions, please feel free to contact me."
   },
   "navigate": {
     "goto": "Go to"

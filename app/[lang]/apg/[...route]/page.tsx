@@ -1,4 +1,4 @@
-import { Container } from '@/app/components/Container';
+import { Container } from '@/app/components/layout/Container';
 
 export default function Page() {
   return (
