@@ -3,7 +3,7 @@ import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#333] w-screen h-28">
+    <footer className="bg-[#333] w-screen h-32">
       <div className="max-w-5xl h-full mx-auto p-5 flex justify-between items-center">
         <h3 className="text-white text-xl">Learn APG</h3>
         <div className="flex gap-4">

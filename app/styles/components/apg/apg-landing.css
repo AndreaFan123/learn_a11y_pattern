@@ -6,6 +6,6 @@
   @apply flex flex-col gap-4;
 }
 
-.apg-btn {
+.btn {
   @apply bg-gradient-to-br from-[#222]  to-[#444] text-white p-3 rounded-md shadow-md hover:-translate-y-2 transition duration-300 ease-in-out;
 }
