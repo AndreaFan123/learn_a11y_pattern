@@ -27,6 +27,27 @@
     "landmarks": "地標",
     "links": "連結"
   },
+  "aria": {
+    "readFirst": "請先閱讀",
+    "noAriaIsBetterThanBadAria": "沒有ARIA比壞的ARIA好",
+    "paragraph-1": "功能上，ARIA角色、狀態和屬性在輔助技術中相當於CSS。對於使用螢幕閱讀器的使用者來說，ARIA控制了他們非視覺體驗的呈現方式。不正確的ARIA會錯誤呈現視覺體驗，對應的非視覺體驗可能產生嚴重影響。",
+    "paragraph-2": "在使用ARIA或本文件中的任何指導之前，請花些時間理解以下兩個基本原則。",
+    "principle-1": "原則1：角色是一個承諾",
+    "principleDescription-1": "這段程式碼：是一個承諾，即該<div>的作者已經整合了提供按鍵互動的JavaScript，以符合按鈕的預期行為。與HTML輸入元素不同，ARIA角色不會導致瀏覽器提供按鍵行為或樣式。",
+    "principle-2": "原則2：ARIA既能掩飾又能增強，既有力量也有危險",
+    "principleDescription-2": "輔助技術所需的關於使用者界面元素意義和目的的資訊稱為無障礙語義。從輔助技術的角度來看，ARIA使作者能夠將HTML和SVG元素裝飾成具有關鍵無障礙語義的元素，否則輔助技術無法可靠地獲得。",
+    "principleDescription-3": "ARIA的某些部分就像是一件披風，它覆蓋或覆寫了原始的語義或內容。",
+    "principleDescription-4": "另一方面，ARIA的一些用法更像是襼帶或皮帶，它們添加了提供原始內容所需的關鍵支援。",
+    "principleDescription-5": "這就是ARIA的威力，它使作者能夠以輔助技術可靠解讀的方式描述幾乎任何使用者界面組件，從而使組件對輔助技術使用者無障礙。",
+    "principleDescription-6": "這也是ARIA的危險之處，作者可能無意中覆蓋了無障礙語義。",
+    "browserAndAssistiveTech": "瀏覽器和輔助技術支援",
+    "browserAndAssitiveDesciption-1": "在將本指南中的代碼用於實際產品之前，測試輔助技術的互操作性至關重要。因為本指南的目的是展示根據ARIA 1.2在ARIA規範中的正確使用，設計模式、參考示例和示範代碼故意不描述和實現繞過瀏覽器和輔助技術對ARIA 1.2支援問題的編碼技術。因此，建議在目標受眾內的每個瀏覽器和輔助技術組合中充分測試實施方案。",
+    "browserAndAssitiveDesciption-2": "同樣地，本指南中的JavaScript和CSS是根據撰寫時的最新版本的Chrome、Firefox和Safari兼容的。在Internet Explorer中，某些JavaScript和CSS可能無法正常運作。",
+    "browserAndAssitiveDesciption-3": "除非ARIA工作組和其他貢獻者忽略了錯誤，本指南中在特定瀏覽器或特定輔助技術中不適用的示例是展示瀏覽器或輔助技術的錯誤。因此，瀏覽器和輔助技術開發人員可以使用本指南中的代碼來幫助評估其對ARIA 1.2的支援質量。",
+    "mobileAndTouchSupport": "移動和觸控支援",
+    "mobileAndTouchDescription-1": "目前，本指南未指示哪些示例與移動瀏覽器或觸控界面兼容。雖然某些示例包含增強移動和觸控支援的特定功能，但某些ARIA功能在任何移動瀏覽器中都不受支援。此外，尚未有標準化的方法來提供適用於移動瀏覽器的觸控互動。",
+    "mobileAndTouchDescription-2": "ARIA工作組正在積極研究ARIA的新版本，其中將包括支援移動和觸控互動的功能。本指南將在這些變更可用時進行更新。"
+  },
   "accordion": {
     "title": "手風琴模式（具有顯示/隱藏功能的區段）",
     "about": "手風琴是一組垂直堆疊的互動標題，每個標題包含表示內容區段的標題、內容片段或縮略圖。這些標題作為控制項，使使用者能夠顯示或隱藏相應的內容區段。手風琴通常用於在單個頁面上呈現多個內容區段時減少滾動的需求。",

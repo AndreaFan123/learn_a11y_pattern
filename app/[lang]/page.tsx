@@ -26,10 +26,14 @@ export default async function Page({
             <p className="apg-paragraph">{d['greeting'].description}</p>
           </div>
         </article>
-
-        <Link className="apg-btn" href="/en/apg">
-          {d['navigate'].goto} APG
-        </Link>
+        <div className="flex gap-4">
+          <Link className="btn" href="/en/apg">
+            {d['navigate'].goto} APG
+          </Link>
+          <Link className="btn" href="/en/apg/aria">
+            {d['aria'].readFirst}
+          </Link>
+        </div>
 
         {/* <span className="absolute w-[15rem] border-[#333] border-[1px]"></span> */}
       </section>
