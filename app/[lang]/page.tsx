@@ -30,7 +30,7 @@ export default async function Page({
           <Link className="btn" href="/en/apg">
             {d['navigate'].goto} APG
           </Link>
-          <Link className="btn" href="/en/apg/aria">
+          <Link className="btn" href="/en/aria">
             {d['aria'].readFirst}
           </Link>
         </div>
