@@ -5,7 +5,12 @@
 - Next.Js
 - Tailwind CSS
 - python for scraping APG documentation and store it in JSON format.
-### Postcss
+
+---
+## Other setup
+
+<details>
+<summary>Postcss</summary>
 This is my first time to use Tailwind CSS, hence I provide some notes for myself to remember how to setup Tailwind CSS with Postcss.
 
 - `npm i -D post-import`
@@ -73,3 +78,36 @@ export default function RootLayout() {
 >**Note**o
 >
 > Custome css paths should be placed under `tailwindcss/base` or `tailwindcss/components` or `tailwindcss/utilities` in `main.css` file or it won't work.
+<detials>
+
+</details>
+
+<details>
+<summary>Vitest</summary>
+
+Below is some notes for myself to remember how to setup Vitest.
+
+- `npm i -D vitest @testing-library/react @vitest/plugin-react jsdom`
+- Create a `vite.config.ts` file and add following syntax:
+
+```ts
+// vite.config.ts
+import { defineConfig } from 'vitest'
+
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    environment: 'jsdom',
+  },
+});
+```
+- Create `__test__` folder in the root directory.
+- Add script in `package.json`: `"test": "vitest"`.
+- Install VSCode extension `Vitest` [here](https://marketplace.visualstudio.com/items?itemName=ZixuanChen.vitest-explorer).
+
+>Referring to 
+> 1. [Vitest](https://vitest.dev/guide/)
+>
+> 2. [Vitest for NextJs](https://github.com/vercel/next.js/tree/canary/examples/with-vitest)
+
+</details>

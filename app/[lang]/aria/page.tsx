@@ -2,6 +2,15 @@ import { Container } from '@/app/components/layout/Container';
 import { Locale } from '@/i18n-config';
 import { getDictionary } from '@/app/lib/getDictionary';
 import { Metadata } from 'next';
+import { CodeSnippets } from '@/app/components/codesnippets/CodeSnippets';
+import {
+  Aria,
+  AsSuspender,
+  Button,
+  overwriteSematic,
+} from '@/app/constants/codeSnippets';
+import { ContentProps } from '@/app/types/ariaTypes';
+import { ContentCard } from '@/app/components/layout/ContentCard';
 
 export const metadata: Metadata = {
   title: 'Learn A11Y Patterns | No ARIA is better than Bad ARIA',
@@ -11,6 +20,37 @@ export const metadata: Metadata = {
 
 export default async function Page({ params }: { params: { lang: Locale } }) {
   const d = await getDictionary(params.lang);
+
+  const contentData: ContentProps[] = [
+    {
+      title: d['aria'].principle1,
+      snippets: Button,
+      descriptions: [d['aria'].principleDescription1],
+    },
+    {
+      title: d['aria'].principle2,
+      descriptions: [
+        d['aria'].principleDescription2,
+        d['aria'].principleDescription3,
+      ],
+      snippets: Aria,
+    },
+    {
+      title: d['aria'].browserAndAssistiveTech,
+      descriptions: [
+        d['aria'].browserAndAssitiveDesciption1,
+        d['aria'].browserAndAssitiveDesciption2,
+        d['aria'].browserAndAssitiveDesciption3,
+      ],
+    },
+    {
+      title: d['aria'].mobileAndTouchSupport,
+      descriptions: [
+        d['aria'].mobileAndTouchDescription1,
+        d['aria'].mobileAndTouchDescription2,
+      ],
+    },
+  ];
 
   return (
     <Container>
@@ -23,35 +63,7 @@ export default async function Page({ params }: { params: { lang: Locale } }) {
         </h2>
         <span className="md:absolute md:w-[50%] md:h-7 md:bg-[#fadc49] md:-z-20 md:top-[13.5rem]"></span>
       </section>
-      <article className="max-w-md flex flex-col gap-6 mt-5 mx-3">
-        <article className="flex flex-col mt-6 gap-3  text-[#444] border-2 border-black p-4 rounded-md boxshodow">
-          <h3 className="text-2xl font-medium text-[#444]">
-            {d['aria'].principle1}
-          </h3>
-          <pre className=" bg-black p-3 rounded-md shadow-md">
-            <code className="text-yellow-300">
-              &lt;div role="button"&gt;I am a button&lt;/div&gt;
-            </code>
-          </pre>
-          <p>{d['aria'].principleDescription1}</p>
-        </article>
-        <article className="flex flex-col mt-6 gap-3  text-[#444] border-2 border-black p-4 rounded-md boxshodow">
-          <h3 className="text-2xl font-medium text-[#444]">
-            {d['aria'].principle2}
-          </h3>
-          <pre className="bg-black flex flex-col rounded-md shadow-md p-3 gap-3">
-            <code className="text-yellow-300">
-              &lt;a role="menuitem"&gt;Assistive tech users perceive this
-              element as an item in a menu, not a link.&lt;/a&gt;
-            </code>
-            <span className="text-pink-300">
-              &lt;a aria-label="Assistive tech users can only perceive the
-              contents of this aria-label"&gt;Link text&lt;/a&gt;
-            </span>
-          </pre>
-          <p>{d['aria'].principleDescription2}</p>
-        </article>
-      </article>
+      <ContentCard content={contentData} />
     </Container>
   );
 }
