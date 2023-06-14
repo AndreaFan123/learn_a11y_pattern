@@ -20,7 +20,13 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/components/*": ["./components/*"],
+      "@/types/*": ["./types/*"],
+      "@/constants": ["./constants"],
+      "@/utils/*": ["./utils/*"],
+      "@/libs/*": ["./libs/*"],
+      "@/hooks/*": ["./hooks/*"]
     }
   },
   "include": [
