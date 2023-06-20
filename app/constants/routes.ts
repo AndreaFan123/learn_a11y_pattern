@@ -3,7 +3,7 @@ export interface Routes {
   url: string;
 }
 
-export const ROUTES: Routes[] = [
+export const Routes: Routes[] = [
   {
     title: 'accordion',
     url: '/accordion',
