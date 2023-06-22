@@ -1,4 +1,4 @@
-export interface ContentProps {
+export interface CardProps {
   title: string;
   aboutThisPattern: string;
   about: string;

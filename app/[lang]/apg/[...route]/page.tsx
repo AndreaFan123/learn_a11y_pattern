@@ -1,7 +1,6 @@
-import { ContentCard } from '@/app/components/ContentCard';
+import { ContentCard } from '@/app/components/layout/ContentCard';
 import { Container } from '@/app/components/layout/Container';
 import { getDictionary } from '@/app/lib/getDictionary';
-import { ContentProps } from '@/app/types/ariaTypes';
 import { Locale } from '@/i18n-config';
 
 export default async function Page({
