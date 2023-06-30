@@ -9,8 +9,6 @@ import {
   Button,
   overwriteSematic,
 } from '@/app/constants/codeSnippets';
-import { ContentProps } from '@/app/types/ariaTypes';
-import { ContentCard } from '@/app/components/ContentCard';
 
 export const metadata: Metadata = {
   title: 'Learn A11Y Patterns | No ARIA is better than Bad ARIA',
@@ -20,37 +18,6 @@ export const metadata: Metadata = {
 
 export default async function Page({ params }: { params: { lang: Locale } }) {
   const d = await getDictionary(params.lang);
-
-  // const contentData: ContentProps[] = [
-  //   {
-  //     title: d['aria'].principle1,
-  //     snippets: Button,
-  //     descriptions: [d['aria'].principleDescription1],
-  //   },
-  //   {
-  //     title: d['aria'].principle2,
-  //     descriptions: [
-  //       d['aria'].principleDescription2,
-  //       d['aria'].principleDescription3,
-  //     ],
-  //     snippets: Aria,
-  //   },
-  //   {
-  //     title: d['aria'].browserAndAssistiveTech,
-  //     descriptions: [
-  //       d['aria'].browserAndAssitiveDesciption1,
-  //       d['aria'].browserAndAssitiveDesciption2,
-  //       d['aria'].browserAndAssitiveDesciption3,
-  //     ],
-  //   },
-  //   {
-  //     title: d['aria'].mobileAndTouchSupport,
-  //     descriptions: [
-  //       d['aria'].mobileAndTouchDescription1,
-  //       d['aria'].mobileAndTouchDescription2,
-  //     ],
-  //   },
-  // ];
 
   return (
     <Container>
