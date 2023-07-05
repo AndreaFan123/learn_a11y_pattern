@@ -15,6 +15,11 @@ export default async function AccordionPage({
         title={d['accordion'].title}
         about={d['accordion'].aboutThisPattern}
         aboutDescription={d['accordion'].about}
+        termsToUnderstand={d['accordion'].termsUnderstaning}
+        header={d['accordion'].header}
+        headerContent={d['accordion'].headerContent}
+        panel={d['accordion'].panel}
+        panelContent={d['accordion'].panelContent}
       />
     </Container>
   );
